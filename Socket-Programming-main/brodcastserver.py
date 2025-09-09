@@ -1,7 +1,7 @@
 import socket
 import threading
 
-clients = []   # list to store active client sockets
+clients = []   
 lock = threading.Lock()
 
 def handle_client(client_socket, addr, server_name, server_integer):
@@ -33,7 +33,6 @@ def handle_client(client_socket, addr, server_name, server_integer):
 
             print(f"[SERVER] Broadcasting result from {addr}")
 
-            # Send message to all connected clients
             with lock:
                 for c in clients:
                     try:
@@ -74,3 +73,4 @@ def run_server(host="0.0.0.0", port=6000):
 
 if __name__ == "__main__":
     run_server()
+
