@@ -16,7 +16,6 @@ def run_client(server_ip="127.0.0.1", port=6000):
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     client_socket.connect((server_ip, port))
 
-    # Start background thread to listen for broadcasts
     threading.Thread(target=listen_for_messages, args=(client_socket,), daemon=True).start()
 
     while True:
@@ -36,3 +35,4 @@ def run_client(server_ip="127.0.0.1", port=6000):
 
 if __name__ == "__main__":
     run_client()
+
