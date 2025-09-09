@@ -1,0 +1,9 @@
+IP address of example.com: 23.220.75.245
+A record: 23.215.0.136
+A record: 23.220.75.245
+A record: 23.220.75.232
+A record: 23.215.0.138
+A record: 23.192.228.84
+A record: 23.192.228.80
+MX record: 0 .
+CNAME record lookup failed: The DNS response does not contain an answer to the question: example.com. IN CNAME
