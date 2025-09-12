@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP Caching Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        .info-box {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .timestamp {
+            color: #666;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 HTTP Caching Demonstration</h1>
+        
+        <div class="info-box">
+            <h2>Welcome to the Caching Demo!</h2>
+            <p>This page demonstrates HTTP caching using <strong>ETag</strong> and <strong>Last-Modified</strong> headers.</p>
+        </div>
+        
+        <h3>How it works:</h3>
+        <ul>
+            <li>First visit: Server sends full content with ETag and Last-Modified headers</li>
+            <li>Subsequent visits: Browser sends cached validators</li>
+            <li>If content unchanged: Server responds with 304 Not Modified</li>
+            <li>If content changed: Server sends new content with updated headers</li>
+        </ul>
+        
+        <div class="info-box">
+            <p><strong>Tip:</strong> Try modifying this HTML file and refreshing the page!</p>
+            <p>Open Developer Tools (F12) → Network tab to see the caching in action.</p>
+        </div>
+        
+        <p class="timestamp">Page generated at: <script>document.write(new Date().toLocaleString());</script></p>
+    </div>
+</body>
+</html>
