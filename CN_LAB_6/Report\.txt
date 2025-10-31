@@ -1,6 +1,6 @@
 Network Traffic Analysis Report
-Name: Rahul Singh Meena
-Roll No.: 2301MC21
+Name: Vichitra Katariya
+Roll No.: 2301MC45
 Course: Computer Networks Lab
 Assignment: Wireshark Traffic Capture and Protocol Analysis
 Date: October 17, 2025
